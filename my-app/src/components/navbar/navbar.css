@@ -1,0 +1,98 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-size: 25px;
+}
+/* Оновлений CSS для стилізації модального вікна */
+
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  background-color: white;
+  padding: 25px 250px 100px; /* Доданий padding для видимості кнопок */
+  border-radius: 10px;
+  position: relative;
+  max-width: 80%; /* Максимальна ширина модального вікна */
+  max-height: 80%; /* Максимальна висота модального вікна */
+  overflow-y: auto; /* Дозволяє прокручувати вміст, якщо вікно занадто велике */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-items {
+  max-height: calc(100% - 150px); /* Висота модального вікна мінус висота кнопок і їх відступ */
+}
+
+.checkout {
+  position: relative; /* Змінено на relative */
+  margin-top: 20px; /* Відступ між товарами і кнопками */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.checkout button {
+  margin-left: 10px; /* Відстань між кнопками */
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background-color: #45a049;
+}
+
+.checkout button:last-child {
+  background-color: #f44336;
+}
+
+.checkout button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+.checkout p {
+  font-weight: bold;
+  margin-right: 20px;
+}
+.empty-cart-message {
+  text-align: center; /* Вирівнювання по центру */
+  margin-top: 50px; /* Відступ від верхнього краю */
+}
